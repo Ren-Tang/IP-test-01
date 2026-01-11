@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ยืนยันสินค้า</title>
+    <style>
+        /* 基础重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden; /* 严禁滚动 */
+            padding: 20px;
+        }
+
+        /* 容器布局 */
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* 产品图片区域 */
+        .product-image {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        /* 标题文字 */
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #222;
+            margin: 10px 0;
+        }
+
+        /* 按钮区域 */
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* 按钮间距 */
+            width: 100%;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 18px 0;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px; /* 大圆角 */
+            transition: transform 0.1s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        /* 点击反馈 */
+        .btn:active {
+            transform: scale(0.97);
+            filter: brightness(0.9);
+        }
+
+        /* Shopee 按钮颜色 */
+        .btn-shopee {
+            background-color: #EE4D2D;
+            color: #ffffff;
+        }
+
+        /* Lazada 按钮颜色 */
+        .btn-lazada {
+            background-color: #0F146D;
+            color: #ffffff;
+        }
+
+        /* 辅助信息 */
+        .footer-text {
+            font-size: 12px;
+            color: #999;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/600x600?text=Product+Image" alt="Product" class="product-image">
+
+        <h1 class="title">🔥 สินค้าที่คุณเห็นในโฆษณา</h1>
+
+        <div class="button-group">
+            <a href="#" class="btn btn-shopee">
+                👉 ซื้อผ่าน Shopee
+            </a>
+
+            <a href="#" class="btn btn-lazada">
+                👉 ซื้อผ่าน Lazada
+            </a>
+        </div>
+
+        <p class="footer-text">โปรดเลือกแพลตฟอร์มที่คุณต้องการสั่งซื้อ</p>
+    </div>
+
+</body>
+</html>
